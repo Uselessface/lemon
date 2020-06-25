@@ -136,9 +136,10 @@ b{
 	margin-top: 15px;
 	margin-left: 30px;
 	display: inline-block;
+	padding-bottom: 10px;
 }	
 
-.kek li{
+.kek>li{
 	display: inline-block;
 	margin-right: 30px;
 }
@@ -147,6 +148,41 @@ b{
 	color: #000000;
 	text-decoration: none;
 }
+
+.kek li:hover>.submenu {
+    display: block;
+ }
+
+.submenu{
+	transition-delay: 1s;
+	margin-top: 10px;
+	margin-left: -50px;
+	padding-left: 25px;
+	text-align: left;
+	width: 151px;
+	height: 180px;
+	opacity: 0.5;
+	background-color: #ffffff;
+	position: absolute;
+	display: none;
+	text-transform: uppercase;
+}
+.submenu:focus{
+	display: block;
+}
+
+.submenu li{
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+.submenu li:hover{
+	opacity: to 1;
+	color: #000000;
+	cursor: pointer;	
+	text-decoration: underline;
+}
+
 
 .base input{
 	padding: 10px 0px 8px 50px;
